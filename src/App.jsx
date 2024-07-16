@@ -29,7 +29,7 @@ function App() {
       localStorage.clear()
     try{
       const res = await fetch(url)
-      const apiData= await res.JSON()
+      const apiData= await res.json()
       setData(apiData)
       localStorage. setItem(localkey,jSON.stringify(apiData))     
       console.log(data)
